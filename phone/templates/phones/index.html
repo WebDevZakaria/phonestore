@@ -1,0 +1,66 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<section class="section-intro padding-y-sm">
+    <div class="container">
+    
+   
+    
+    </div> <!-- container //  -->
+    </section>
+    <!-- ========================= SECTION MAIN END// ========================= -->
+    
+    <!-- ========================= SECTION  ========================= -->
+    <section class="section-name padding-y-sm">
+    <div class="container">
+    
+    <header class="section-heading">
+
+        <div>
+            <img src="{% static '/images/shopping3.png' %}" alt="handy" style="width: 1220px;height: 410px; border-radius: 30px;"/>
+
+            
+            <h3 class="section-title">Popular products</h3>
+
+        </div>
+
+    </header><!-- sect-heading -->
+    
+    
+        
+    <div class="row">
+        {% for product in product %}
+        <div class="col-md-3">
+            <div class="card card-product-grid">
+
+                <a href="{% url 'product-detail' product.id %}" class="img-wrap"> <img src="{{product.image.url}}"> </a>
+
+                <figcaption class="info-wrap">
+                    <a href="{% url 'product-detail' product.id %}" class="title">{{product.Product_name}}</a>
+                    <div class="price mt-1">{{product.Price}} DA</div> <!-- price-wrap.// -->
+                    <div class="price mt-1">{{product.owner.first_name}}</div> <!-- price-wrap.// -->
+                    
+
+
+                </figcaption>
+            </div>
+        </div> <!-- col.// -->
+        {% endfor %}
+       
+       
+    </div> <!-- row.// -->
+    
+    </div><!-- container // -->
+    </section>
+    <!-- ========================= SECTION  END// ========================= -->
+    
+    
+    
+    
+
+
+
+{% endblock %}
