@@ -1,40 +1,26 @@
-A Phone store created with Django :
+<h1>Phone Store  Django App</h1>
+<hr/>
 
-Functionality:
+<h2>Project Overview</h2>
+<hr/>
+The Phone E-Commerce Store with Django is a web application designed to facilitate online buying and selling of phones. 
+It provides a platform for users to browse a catalog of phones, add them to their cart, and complete the purchase process.
 
-Product Listing:
+<h2>Features</h2>
+<hr/>
+Product Catalog: Browse a comprehensive catalog of available phones.
 
-Display a list of Realme phones available in the store.
-Show product details such as name, image, price, and description.
+User Authentication: Secure user authentication for personalized shopping experiences.
 
-Product Detail Page:
+Shopping Cart: Add phones to a shopping cart and complete the purchase.
 
-Provide a dedicated page for each  phone with detailed information.
+Order Management: View order history and manage orders.
 
+Admin Panel: Manage products, orders, and users through the Django admin panel.
 
-Shopping Cart:
-
-Allow users to add  phones to their shopping cart.
-Display the contents of the cart, including product names, quantities, and total price.
-
-User Authentication:
-
-Implement user authentication to allow users to register, log in, and log out.
-Authenticated users can make purchases.
-
-Order Processing:
-
-Allow users to place orders and view their order history.
-Send order confirmation emails to users.
-
-Admin Panel:
-
-Provide an admin panel to manage Realme products, orders, and user accounts.
-
-
-
-
-Setup to run the application
+<h2>Getting Started</h2>
+<hr/>
+Follow these instructions to set up and run the Phone E-Commerce Store with Django locally.
 
 first thing to do is to clone repository :
 
@@ -60,6 +46,7 @@ Once downloading the dependencies has finished you can start the server by runni
 (env) $ python manage.py runserver
 
 And go to your browser and navigate to http://127.0.0.1:8000.
+
 
 
 
